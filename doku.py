@@ -32,20 +32,20 @@ pg.display.set_icon(logo)
 pg.display.set_caption('Sudoku Solver')
 
 # The main function that controls the game
-def main () :
-  looping = True
-  
-  # The main game loop
-  while looping :
-    # Get inputs
-    for event in pg.event.get() :
-      if event.type == pg.QUIT :
-        pg.quit()
-        sys.exit()
+def main ():
+    looping = True
     
+    # The main game loop
+    while looping :
+    # Get inputs
+        for event in pg.event.get() :
+            if event.type == pg.QUIT :
+                pg.quit()
+                sys.exit()
+
     # Processing
     # This section will be built out later
- 
+
     # Render elements of the game
     window.fill(backg)
     pg.display.update()
