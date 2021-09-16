@@ -11,6 +11,7 @@ column and row it must go 1-9 without repeating.
 '''
 import pygame as pg
 import sys, random
+import doku_fun as df
 
 #Initialize the pygame module
 pg.init()
@@ -24,7 +25,6 @@ fps = 600
 clock = pg.time.Clock()
 w_width = 600
 w_height = 800
-
 
 # Display the window
 window = pg.display.set_mode((w_width,w_height))
@@ -41,13 +41,15 @@ def main ():
                 pg.quit()
                 sys.exit()
 
-    # Processing
-    # This section will be built out later
+        # Processing
+        # This section will be built out later
 
-    # Render elements of the game
+        # Render elements of the game
         window.fill(backg)
         pg.display.update()
         #clock.tick(fps)
 
+df.draw_board()
 main()
+
 
